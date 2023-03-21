@@ -1,0 +1,425 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @apply font-MontSerrat;
+}
+
+.container{
+    @apply mx-auto;
+}
+
+
+nav ul a{
+    @apply px-3 flex h-[100px] items-center border-b-4 border-black;
+}
+
+nav ul a:hover, 
+nav ul .active {
+    @apply border-b-4 border-brown text-[#aeaeae];
+}
+
+.banner{
+    height: calc(100vh - 100px);
+    background-image: url('../img/bg.jpg');
+}
+
+.banner .sliders .slide{
+    @apply w-screen h-full inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner .slide h1{
+    @apply uppercase font-bold text-5xl;
+}
+
+@screen mobile{
+    .banner .slide h1{
+        @apply text-2xl;
+    }
+}
+
+.banner .slide h1 span{
+    @apply text-brown;
+}
+
+.slide-area h2{
+    @apply uppercase mt-5 text-xl font-bold;
+
+}
+
+@screen mobile{
+    .slide-area h2{
+        @apply text-lg;
+    }
+}
+
+.button{
+    @apply bg-brown text-white uppercase text-sm py-2 px-7 font-semibold mt-7 rounded-3xl text-center;
+}
+
+.button:hover{
+    @apply bg-[#373737];
+}
+
+.button-black{
+    @apply bg-[#373737] text-white uppercase text-sm py-2 px-7 font-semibold mt-7 rounded-3xl text-center;
+}
+
+.button-black:hover{
+    @apply bg-brown;
+}
+
+.sliders-pointers .circle{
+    @apply rounded-full border-brown mx-1 bg-transparent border-2 cursor-pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.sliders-pointers .active{
+    @apply bg-brown;
+}
+
+.default{
+    @apply pt-12 pb-12;
+}
+
+.default .section-title, 
+.default .section-desc {
+    @apply text-center uppercase font-semibold;
+}
+
+.default .section-title {
+    @apply text-xl;
+}
+
+.default .section-desc {
+    @apply text-sm text-[#aeaeae] mt-3 mb-10;
+}
+
+.default.light{
+    @apply bg-[#f7f7f7];
+}
+
+.default.light .section-title,
+.default.light .section-body {
+    @apply text-black;
+}
+
+.default.dark{
+    @apply bg-black;
+}
+
+.default.dark .section-title,
+.default.dark .section-body {
+    @apply text-white;
+}
+
+.section-services .section-service{
+    @apply flex-1 text-center flex flex-col items-center border-r border-[#333] p-4 ;
+}
+
+@screen tablet{
+    .section-services{
+        @apply flex-wrap;
+    }
+
+    .section-services .section-service{
+        @apply basis-1/2 flex-wrap;
+    }
+}
+
+.section-services:first-child{
+    @apply border-l border-[#333];
+}
+
+.section-service img{
+    @apply max-w-[59px] max-h-[59px];
+}
+
+.section-service h4{
+    @apply mt-5 uppercase text-lg font-bold;
+}
+
+.section-projects ul li{
+    @apply inline-block p-3 uppercase border-l-2 border-[#ddd] border-b-[#EEE];
+}
+
+.section-projects li:hover, 
+.section-projects li.active {
+    @apply border-b-2 border-b-brown;
+}
+
+.section-projects ul li:first-child{
+    @apply border-l-0;
+}
+
+.section-projects-photos .section-projects-photo{
+    @apply basis-1/4 min-w-[300px] mx-auto;
+}
+
+.section-projects-photo .section-projects-photoarea{
+    @apply relative m-4 h-[160px] overflow-hidden;
+}
+
+.section-projects-photo img{
+    @apply h-full w-full object-cover relative;
+}
+
+.section-projects-photoarea .section-projects-photoinfo{
+    @apply absolute w-full h-full hidden justify-center items-center text-[#fff] flex-col z-10;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.section-projects-photoarea .section-projects-photoinfo h5{
+    @apply text-lg font-semibold;
+}
+
+.section-projects-photoarea:hover .section-projects-photoinfo{
+    @apply flex;
+}
+
+.bg-team{
+    background-image: url("../img/bg.jpg");
+    @apply bg-cover bg-center p-0;
+}
+
+.section-team-area{
+    background-color: rgba(0, 0, 0, 0.8);
+    @apply pt-12 pb-12;
+}
+
+.section-team-area .section-team .slide{
+    @apply w-[280px] h-[100%] inline-block bg-white min-h-[300px] mx-2;    
+}
+
+.section-team .section-team-avatar{
+    @apply w-[150px] h-auto
+}
+
+.section-team .section-team-name{
+    @apply uppercase font-semibold text-lg mt-7;
+}
+
+.section-team .section-team-role{
+    @apply text-xs text-[#999] mt-1;
+}
+
+.section-team-social{
+    @apply flex mt-5;
+}
+
+.section-team-social a{
+    @apply inline-flex w-6 h-6 bg-[#ccc] justify-center items-center rounded-full mr-2;
+}
+
+.section-team-social a:hover{
+    @apply bg-brown;
+}
+
+.section-premium{
+    width: fit-content;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.3);
+}
+
+.fit-content{
+    width: fit-content;
+}
+
+.section-list li{
+    @apply font-bold text-base uppercase;
+}
+
+.section-list .item{
+    @apply my-4 relative;
+}
+
+.section-list .item::before{
+    content: url("/img/check.png");
+    @apply absolute left-[-50px];
+}
+
+@screen tablet{
+    .section-list .item::before{
+        @apply hidden;
+    }
+}
+
+.section-list li span{
+    @apply text-lg text-[#999] normal-case block font-normal;
+}
+
+.section-list li span ul li{
+    @apply text-lg text-[#999] normal-case block font-normal;
+}
+
+.section-list li span ul:first-child{
+    @apply mt-3;
+}
+
+.section-somefacts .section-indicator{
+    @apply text-center basis-1/4 max-w-[180px];
+}
+
+@screen tablet{
+    .section-somefacts .section-indicator{
+        @apply basis-1/2 max-w-none p-6;
+    }
+}
+
+.section-somefacts .section-indicator .number{
+    @apply font-bold text-4xl text-brown mb-2;
+}
+
+.section-somefacts .section-indicator .title{
+    @apply font-bold text-base text-white uppercase mb-3;
+}
+
+.section-somefacts .section-indicator .desc{
+    @apply text-xs text-[#cacaca];
+}
+
+.tell-aboutus{
+    border-bottom: 1px solid #999;
+}
+
+.section-tell-aboutus-area .section-title{
+    @apply text-[#999] text-sm uppercase font-bold mr-14 inline-flex items-center;
+    height: fit-content;
+}
+
+@screen tablet{
+    .section-tell-aboutus-area .section-title{
+        @apply mr-0 justify-center;
+    }
+}
+
+.section-tell-aboutus-area .section-title::before{
+    content: url('/img/share.png');
+    @apply items-center mr-2;
+}
+
+.section-tell-aboutus-area .section-social-media{
+    @apply flex mx-7;
+}
+
+@screen tablet{
+    .section-tell-aboutus-area .section-social-media{
+        @apply mx-0 justify-center;
+    }
+}
+
+.social-item{
+    @apply flex items-center mx-3;
+}
+
+.social-item .numbers{
+    @apply font-bold text-[#999];
+}
+
+.social-icon{
+    @apply w-6 h-6 flex justify-center items-center rounded-full mr-2;
+}
+
+.social-icon img{
+    @apply h-[13px];
+}
+
+.twitter{
+    @apply bg-[#34c5f1];
+}
+
+.linkedin{
+    @apply bg-[#137cb3];
+}
+
+.facebook{
+    @apply bg-[#336298];
+}
+
+.googleplus{
+    @apply bg-[#e64238];
+}
+
+.pinterest{
+    @apply bg-[#b71d27]
+}
+
+.section-contactus .form-group{
+    @apply px-4 mb-10;
+}
+
+.section-contactus .form-group label{
+    @apply block w-full text-xs text-[#999] uppercase font-semibold;
+}
+
+.section-contactus .form-group input{
+    @apply w-full bg-transparent border-0 outline-none h-5;
+    border-bottom: 2px solid rgba(153,153,153, 0.6);
+}
+
+.section-contactus .form-group textarea{
+    @apply w-full bg-transparent border-0 outline-none h-5;
+    border-bottom: 2px solid rgba(153,153,153, 0.6);
+}
+
+.section-footer-top{
+    background-image: url('/img/mapa.jpg');
+    @apply py-8 bg-cover bg-center;
+}
+
+footer .section-map-data{
+    @apply py-14 px-8 w-1/2 bg-white;
+}
+
+@screen tablet{
+    footer .section-map-data{
+        @apply w-full;
+    }
+}
+
+footer .section-map-data a{
+    @apply inline-flex items-center w-full mb-4 text-[#999];
+}
+
+footer .section-map-data a .icon{
+    @apply w-8 h-8 bg-[#999] rounded-full flex justify-center items-center mr-5;
+}
+
+.section-bottom-footer .links a{
+    @apply w-8 h-8 bg-[#373737] rounded-full flex justify-center items-center mr-2;
+}
+
+.section-bottom-footer .links a:hover{
+    @apply bg-brown;
+}
+
+.email-subscribe input{
+    border-bottom: 2px solid #999;
+}
+
+@screen tablet{
+    .section-companies-area div{
+        @apply basis-1/3 flex justify-center items-center mb-5;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

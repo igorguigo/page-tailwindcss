@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <link rel="stylesheet" href="/css/output.css">
+</head>
+<body class="text-xs overflow-x-hidden">
+    <header class="h-[100px] bg-black text-white">
+        <div class="container flex mx-auto items-center">
+            <div class="icon-box mr-4">
+                <div class="logo w-[80px] h-[80px] bg-brown rounded-full"></div>
+            </div>
+            <nav class="flex-1">
+                <ul class="flex justify-end text-white uppercase font-semibold">
+                    <li><a class="active" href="">Home</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Out projects</a></li>
+                    <li><a href="">Our team</a></li>
+                    <li><a href="">Happy clients</a></li>
+                    <li><a href="">Price</a></li>
+                    <li><a href="">Some facts</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="banner bg-gray-600 bg-cover bg-center overflow-hidden">
+            <div class="sliders w-[1000vw] h-full">
+                <div class="slide">
+                    <div class="slide-area flex items-center justify-center h-full text-white flex-col">
+                        <h1>Design is about<br><span>Communication</span></h1>
+                        <h2>Call Us +00 0 1234 5678</h2>
+                        <a class="button inline-block" href="">Get in touch!</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-area flex items-center justify-center h-full text-white flex-col">
+                        <h1>Design is about<br><span>Communication</span></h1>
+                        <h2>Call Us +00 0 1234 5678</h2>
+                        <a class="button inline-block" href="">Get in touch!</a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide-area flex items-center justify-center h-full text-white flex-col">
+                        <h1>Design is about<br><span>Communication</span></h1>
+                        <h2>Call Us +00 0 1234 5678</h2>
+                        <a class="button inline-block" href="">Get in touch!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="sliders-pointers w-screen h-[20px] absolute mt-[-50px] flex justify-center items-center">
+                <div class="circle active"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </section>
+        <section class="default light">
+            <div class="section-title">About us</div>
+            <div class="section-desc">Who we are?</div>
+            <div class="section-body container">
+                <div class="section-aboutus flex max-w-[1110px] mx-auto flex-wrap">
+                    <div class="section-aboutus-left flex-1 mr-5 tablet:basis-full tablet:m-0">
+                        <p class="text-sm leading-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequuntur dignissimos error culpa ab animi omnis. Tempore sunt voluptatibus unde tenetur amet voluptatum magnam quod! Consequuntur dicta deserunt facilis quo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laboriosam eaque earum in nisi maiores adipisci magnam aperiam, mollitia assumenda sed, vel atque libero quaerat rem ad, qui nobis illum?</p>
+                        <br>
+                        <a class="button inline-block tablet:mb-5" href="">Learn more</a>
+                    </div>
+                    <div class="section-aboutus-right w-[520px] text-center tablet:basis-full tablet:w-full ">
+                        <img class="w-[480px] shadow-xl tablet:w-full" src="/img/foto9.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="default dark">
+            <div class="section-title">Services</div>
+            <div class="section-desc">Services that we provide</div>
+            <div class="section-body container">
+                <div class="section-services flex">
+                    <div class="section-service">
+                        <img src="/img/medalha.png" alt="">
+                        <h4>High Quality Design</h4>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <div class="section-service">
+                        <img src="/img/estrela.png" alt="">
+                        <h4>Modern Design</h4>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <div class="section-service">
+                        <img src="/img/relogio.png" alt="">
+                        <h4>Regular Updates</h4>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                    <div class="section-service">
+                        <img src="/img/balao.png" alt="">
+                        <h4>Fast and free support</h4>
+                        <p>Lorem ipsum dolor</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="default light">
+            <div class="section-title">Our projects</div>
+            <div class="section-desc">What we create</div>
+            <div class="section-body container">
+                <div class="section-projects flex flex-col items-center">
+                    <div class="section-projects-filters border-2 border-[#ccc] bg-[#EEE] rounded-[30px] px-5 uppercase text-base inline-block mb-8">
+                        <ul>
+                            <li class="active">All</li>
+                            <li>Photos</li>
+                            <li>Branding</li>
+                            <li>Adverts</li>
+                            <li>Development</li>
+                            <li>Misc</li>
+                        </ul>
+                    </div>
+                    <div class="section-projects-photos flex flex-wrap ">
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto2.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto4.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="section-projects-photo">
+                            <div class="section-projects-photoarea">
+                                <div class="section-projects-photoinfo">
+                                    <h5>ABOUT</h5>
+                                    <p>Vestibulum porta aliquet risus</p>
+                                </div>
+                                <img src="/img/foto6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="button inline-block" href="">More Projects</a>
+                </div>
+            </div>
+        </section>
+        <section class="default dark bg-team">
+            <div class="section-team-area">
+                <div class="section-title">Our team</div>
+                <div class="section-desc">Our co-workers</div>
+                <div class="section-body container">
+                    <div class="section-team flex overflow-hidden max-w-[900px] max-h-[326px] mx-auto">
+                        <div class="sliders w-[1000vw] h-full">
+                            <div class="slide">
+                                <div class="slide-area flex items-center justify-center h-full text-black flex-col p-7 text-center">
+                                    <img class="section-team-avatar" src="/img/mulher1.png" alt="">
+                                    <div class="section-team-name">Joe Doe</div>
+                                    <div class="section-team-role">Master mind</div>
+                                    <div class="section-team-social">
+                                        <a href=""><img src="/img/facebook.png" alt=""></a>
+                                        <a href=""><img src="/img/googleplus.png" alt=""></a>
+                                        <a href=""><img src="/img/linkedin.png" alt=""></a>
+                                        <a href=""><img src="/img/pinterest.png" alt=""></a>
+                                        <a href=""><img src="/img/twitter.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-area flex items-center justify-center h-full text-black flex-col p-7 text-center">
+                                    <img class="section-team-avatar" src="/img/homem1.png" alt="">
+                                    <div class="section-team-name">Mike Shiller</div>
+                                    <div class="section-team-role">Creative head</div>
+                                    <div class="section-team-social">
+                                        <a href=""><img src="/img/facebook.png" alt=""></a>
+                                        <a href=""><img src="/img/googleplus.png" alt=""></a>
+                                        <a href=""><img src="/img/linkedin.png" alt=""></a>
+                                        <a href=""><img src="/img/pinterest.png" alt=""></a>
+                                        <a href=""><img src="/img/twitter.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-area flex items-center justify-center h-full text-black flex-col p-7 text-center">
+                                    <img class="section-team-avatar" src="/img/mulher2.png" alt="">
+                                    <div class="section-team-name">Anna Johns</div>
+                                    <div class="section-team-role">Technical lead</div>
+                                    <div class="section-team-social">
+                                        <a href=""><img src="/img/facebook.png" alt=""></a>
+                                        <a href=""><img src="/img/googleplus.png" alt=""></a>
+                                        <a href=""><img src="/img/linkedin.png" alt=""></a>
+                                        <a href=""><img src="/img/pinterest.png" alt=""></a>
+                                        <a href=""><img src="/img/twitter.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <div class="slide-area flex items-center justify-center h-full text-black flex-col p-7 text-center">
+                                    <img class="section-team-avatar" src="/img/mulher1.png" alt="">
+                                    <div class="section-team-name">Joe Doe</div>
+                                    <div class="section-team-role">Master mind</div>
+                                    <div class="section-team-social">
+                                        <a href=""><img src="/img/facebook.png" alt=""></a>
+                                        <a href=""><img src="/img/googleplus.png" alt=""></a>
+                                        <a href=""><img src="/img/linkedin.png" alt=""></a>
+                                        <a href=""><img src="/img/pinterest.png" alt=""></a>
+                                        <a href=""><img src="/img/twitter.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sliders-pointers h-[20px] flex justify-center items-center mt-7">
+                        <div class="circle active"></div>
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="default light">
+            <div class="section-title">Happy clients</div>
+            <div class="section-desc">Client reviews</div>
+            <div class="section-body container">
+                <div class="section-happy clients max-w-[760px] mx-auto flex justify-center items-center flex-col text-center">
+                   <img class="mb-7" src="/img/homem2.png" alt="">
+                   <div class="section-client-name font-bold text-2xl mb-1">John Doe</div>
+                   <div class="section-client-departament font-semibold text-base mb-4">Head of PR Departament</div>
+                   <div class="section-client-feedback text-sm text-[#999]">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, id consequatur! Quo quidem qui ducimus, rerum iure magnam maxime iusto sequi voluptates laborum alias, culpa sed officia dolorum impedit quis. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                   </div>
+                </div>
+                <div class="sliders-pointers h-[20px] flex justify-center items-center mt-7">
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+        <section class="companies shadow-xl">
+            <div class="section-companies-area container flex justify-between items-center py-10 tablet:flex-wrap">
+                <div>
+                    <img class="" src="/img/empresa1.png" alt="">
+                </div>
+                <div>
+                    <img class="" src="/img/empresa2.png" alt="">
+                </div>
+                <div>
+                    <img class="" src="/img/empresa3.png" alt="">
+                </div>
+                <div>
+                    <img class="" src="/img/empresa4.png" alt="">
+                </div>
+                <div>
+                    <img class="" src="/img/empresa5.png" alt="">
+                </div>
+                <div>
+                    <img class="" src="/img/empresa6.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="default light">
+            <div class="section-title">Price</div>
+            <div class="section-desc">Pricing table</div>
+            <div class="section-body container">
+                <div class="section-prices flex justify-evenly items-center computer:flex-wrap">
+                    <div class="computer:basis-1/2">
+                        <div class="section-price min-w-[250px] p-7 text-center bg-white shadow-xl computer:w-[70%] computer:mx-auto computer:mb-7">
+                            <div class="title font-semibold text-base uppercase mb-2">Express</div>
+                            <div class="price font-bold text-3xl mb-1">$ 9.99</div>
+                            <div class="period text-sm uppercase mb-4 text-[#aeaeae]">/Month</div>
+                            <ul class="description text-sm mb-6 text-[#999]">
+                                <li>Tracking Issues</li>
+                                <li>-</li>
+                                <li>Add bugs through email</li>
+                                <li>-</li>
+                                <li>Notifications</li>
+                                <li>-</li>
+                                <li>Time tracking</li>
+                                <li>-</li>
+                                <li>Custom views</li>
+                            </ul>
+                            <a class="button-black inline-block" href="">Choose</a>
+                        </div>
+                    </div>
+                    <div class="computer:basis-1/2">
+                        <div class="section-price min-w-[250px] p-7 text-center bg-white shadow-xl computer:w-[70%] computer:mx-auto computer:mb-7">
+                            <div class="title font-semibold text-base uppercase mb-2">Standart</div>
+                            <div class="price font-bold text-3xl mb-1">$ 14.99</div>
+                            <div class="period text-sm uppercase mb-4 text-[#aeaeae]">/Month</div>
+                            <ul class="description text-sm mb-6 text-[#999]">
+                                <li>Tracking Issues</li>
+                                <li>-</li>
+                                <li>Add bugs through email</li>
+                                <li>-</li>
+                                <li>Notifications</li>
+                                <li>-</li>
+                                <li>Time tracking</li>
+                                <li>-</li>
+                                <li>Custom views</li>
+                            </ul>
+                            <a class="button-black inline-block" href="">Choose</a>
+                        </div>
+                    </div>
+                    <div class="computer:basis-1/2">
+                        <div class="section-price min-w-[250px] p-7 text-center bg-white shadow-xl computer:w-[70%] computer:mx-auto computer:mb-7">
+                            <div class="title font-semibold text-base uppercase mb-2">Luxe</div>
+                            <div class="price font-bold text-3xl mb-1">$ 19.99</div>
+                            <div class="period text-sm uppercase mb-4 text-[#aeaeae]">/Month</div>
+                            <ul class="description text-sm mb-6 text-[#999]">
+                                <li>Tracking Issues</li>
+                                <li>-</li>
+                                <li>Add bugs through email</li>
+                                <li>-</li>
+                                <li>Notifications</li>
+                                <li>-</li>
+                                <li>Time tracking</li>
+                                <li>-</li>
+                                <li>Custom views</li>
+                            </ul>
+                            <a class="button-black inline-block" href="">Choose</a>
+                        </div>
+                    </div>
+                    <div class="computer:basis-1/2">
+                        <div class="section-price min-w-[250px] p-7 text-center bg-white shadow-xl computer:w-[70%] computer:mx-auto computer:mb-7">
+                            <div class="title font-semibold text-base uppercase mb-2">Premium</div>
+                            <div class="price font-bold text-3xl mb-1">$ 24.99</div>
+                            <div class="period text-sm uppercase mb-4 text-[#aeaeae]">/Month</div>
+                            <ul class="description text-sm mb-6 text-[#999]">
+                                <li>Tracking Issues</li>
+                                <li>-</li>
+                                <li>Add bugs through email</li>
+                                <li>-</li>
+                                <li>Notifications</li>
+                                <li>-</li>
+                                <li>Time tracking</li>
+                                <li>-</li>
+                                <li>Custom views</li>
+                            </ul>
+                            <a class="button-black inline-block" href="">Choose</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="default">
+            <div class="section-title">Premium</div>
+            <div class="section-desc">Even more features available</div>
+            <div class="section-body container">
+                <div class="section-premium flex justify-center item pb-12 mx-auto tablet:flex-wrap tablet:p-2">
+                   <img src="/img/livros.png" alt="" class="section-image basis-1/2 max-w-[363px] mr-[100px] tablet:basis-full tablet:mr-0 tablet:w-full">
+                   <ul class="section-list basis-1/2 max-w-[490px] tablet:basis-full">
+                       <li class="item">
+                           First Feature 
+                           <span>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias officiis dolore culpa perferendis! 
+                                <ul>
+                                    <li>- Feature one</li>
+                                    <li>- Feature two</li>
+                                    <li>- Feature three</li>
+                                </ul>
+                           </span>
+                        </li>
+                        <li class="item">
+                            Second feature
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        </li>
+                        <li class="item">
+                            Third feature
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        </li>
+                   </ul>
+                </div>
+                <div class="sliders-pointers h-[20px] flex justify-center items-center mt-7">
+                    <div class="circle active"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+                <a href="" class="button mx-auto flex fit-content">Get in touch</a>
+            </div>
+        </section>
+        <section class="default dark">
+            <div class="section-title">Some facts</div>
+            <div class="section-desc">About our work</div>
+            <div class="section-body container">
+                <div class="section-somefacts flex justify-around items-center tablet:flex-wrap">
+                    <div class="section-indicator">
+                        <div class="number">1000</div>
+                        <div class="title">Design projects released</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="section-indicator">
+                        <div class="number">900</div>
+                        <div class="title">Photos</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="section-indicator">
+                        <div class="number">500</div>
+                        <div class="title">Marketing ideas</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                    <div class="section-indicator">
+                        <div class="number">100</div>
+                        <div class="title">Exhbitions</div>
+                        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="tell-aboutus">
+            <div class="section-tell-aboutus-area container flex justify-center py-4 tablet:flex-wrap">
+                <div class="section-title tablet:basis-full">Tell about us:</div>
+                <div class="section-social-media tablet:basis-full">
+                    <div class="social-item">
+                        <a href="" class="social-icon twitter"><img src="/img/twitter.png" alt=""></a>
+                        <div class="numbers">152</div>
+                    </div>
+                    <div class="social-item">
+                        <a href="" class="social-icon linkedin"><img src="/img/linkedin.png" alt=""></a>
+                        <div class="numbers">31</div>
+                    </div>
+                    <div class="social-item">
+                        <a href="" class="social-icon facebook"><img src="/img/facebook.png" alt=""></a>
+                        <div class="numbers">165</div>
+                    </div>
+                    <div class="social-item">
+                        <a href="" class="social-icon googleplus"><img src="/img/googleplus.png" alt=""></a>
+                        <div class="numbers">22</div>
+                    </div>
+                    <div class="social-item">
+                        <a href="" class="social-icon pinterest"><img src="/img/pinterest.png" alt=""></a>
+                        <div class="numbers">165</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="default light">
+            <div class="section-title">Contact us</div>
+            <div class="section-desc">Our agency located in melbourne, australia</div>
+            <div class="section-body container">
+                <div class="section-contactus max-w-[540px] mx-auto">
+                    <form action="" class="flex flex-wrap mx-2">
+                        <div class="form-group basis-2/4">
+                            <label for="id_name">Name</label>
+                            <input type="text" id="id_name" name="name">
+                        </div>
+                        <div class="form-group basis-2/4">
+                            <label for="id_email">Email</label>
+                            <input type="email" id="id_email" name="email">
+                        </div>
+                        <div class="form-group basis-full">
+                            <label for="id_subject">Subject</label>
+                            <input type="text" id="id_subject" name="subject">
+                        </div>
+                        <div class="form-group basis-full">
+                            <label for="id_message">Message</label>
+                            <textarea name="message" id="id_message" cols="30" rows="10"></textarea>
+                        </div>
+                        <button type="submit" class="button mx-auto flex fit-content mt-12">Send message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <section class="section-footer-top">
+                <div class="section-map container">
+                    <div class="section-map-data">
+                       <a href="">
+                           <div class="icon">
+                               <img src="/img/carta.png" alt="">
+                           </div>
+                           PO Box 1622 Collins Street West Victoria 8007 Australia
+                       </a>
+                       <a href="">
+                           <div class="icon">
+                               <img src="/img/localizacao.png" alt="">
+                           </div>
+                            121 King Street Melbourne Victoria 3000 Australia
+                        </a>
+                        <a href="">
+                            <div class="icon">
+                                <img src="/img/telefone.png" alt="">
+                            </div>
+                            +00 0 1234 5678
+                        </a>
+                        <a href="">
+                            <div class="icon">
+                                <img src="/img/arroba.png" alt="">
+                            </div>
+                            bukindesign@gmail.com
+                        </a>
+                        <a href="">
+                            <div class="icon">
+                                <img src="/img/web.png" alt="">
+                            </div>
+                            www.envato.com
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="section-bottom-footer py-7 bg-black tablet:px-3">
+                <div class="section-bottom-footer-content container flex tablet:flex-col">
+                    <div class="social-media flex justify-between basis-1/3 flex-col tablet:flex-row">
+                        <div class="links inline-flex">
+                            <a href="">
+                                <img src="/img/twitter.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/img/linkedin.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/img/googleplus.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/img/facebook.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="/img/twitter.png" alt="">
+                            </a>
+                        </div>
+                        <div class="copyright text-white font-bold text-sm uppercase">
+                            Awax &#169; 2016 
+                        </div>
+                    </div>
+                    <div class="text basis-1/3 text-[#999] tablet:my-5">
+                        <div class="text-content max-w-[350px] mx-auto tablet:max-w-none">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias tempora adipisci vitae soluta quae non delectus, recusandae perspiciatis dolores culpa, ea corporis. Quasi laboriosam eveniet, sequi fugit sit tempore explicabo?
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt at voluptatibus voluptatem eveniet iusto facere! Quae magnam ipsa mollitia officiis obcaecati at explicabo consequuntur soluta sed adipisci odio, illum labore.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat obcaecati minus eligendi harum totam quas tempora cum quis necessitatibus! Vel rerum laborum suscipit eveniet ea? Modi assumenda dolore explicabo nisi!
+                        </div>
+                    </div>
+                    <div class="email-subscribe basis-1/3">
+                        <div class="email-subscribe-content max-w-[350px] mx-auto tablet:max-w-none">
+                            <div class="email-subscribe-box py-10 px-14 bg-[#373737] text-center">
+                                <form action="">
+                                    <label for="id_email_subscribe" class="uppercase text-[#999] tablet:block">Email to subscribe</label>
+                                    <input type="email" name="email-subscribe" id="id_email_subscribe" class="border-0 outline-none bg-transparent text-[#999]">
+                                    <button type="submit" class="button mx-auto flex fit-content mt-12">subscribe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+        </footer>
+    </main>
+</body>
+</html>
